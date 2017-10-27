@@ -1,31 +1,3 @@
-<app-header>
-</app-header>
-<app-top-nav></app-top-nav>
-<div class="ns-body-wide fullwidth ns-title-wide qtr-right-rail standard">
-  <div class="ns-outer-control">
-    <div class="ns-body container">
-      <div class="row">
-        <div class="titleBar parbase title-bar">
-          <div class="ns-title-bar standard">
-            <div class="h1">
-              <p class="title-text">{{ pageTitle }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span9">
-          <router-outlet></router-outlet>
-        </div>
-        <div class="span3 right-rail" ng-hide="true">
-          <div class="contribution">
-            <h3><span>8%</span><br>This is your company match.</h3>
-            <p>Your company will match your contribution, dollar for dollar, up to six percent.</p>
-            <button class="capital-blue">LEARN MORE</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-header></app-header>
+<router-outlet></router-outlet>
 <app-footer></app-footer>

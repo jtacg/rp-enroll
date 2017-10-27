@@ -1,44 +1,64 @@
-<div id="coffee-savings">
-  <form>
-    <div class="container">
-      <h1> Coffee Savings</h1>
-      <p>If you invested the ammount you spend on coffee daily, what happens?</p>
+<div id="coffee-savings" class="ns-body container">
+  <div class="row">
+    <div class="span9">
+      <form>
+        <div class="container">
+          <h1> Coffee Savings</h1>
+          <p>If you invested the ammount you spend on coffee daily, what happens?</p>
 
-      <div class="left-col">
-        <div>
-          <label>How many cups do you drink daily?</label><br>
-          <!-- <input type="range" max="10" min="0" #numberOfCups  /> -->
-          <!-- <md-slider #numberOfCups
-          (change)="calcCoffeeSavings(numberOfCups.value, numberOfYears.value)"
-          [value]=[(cups)]
-          [max]="5"
-          [min]="1"
-          [step]="1"
-          [tick-interval]="2">
-        </md-slider> -->
-          <strong>{{ numberOfCups.value }} cups</strong>
+          <div class="row">
+            <div class="span9">
+              <div>
+                <label>How many cups do you drink daily?</label><br>
+                <!-- <input type="range" max="10" min="0" #numberOfCups  /> -->
+                <!-- <md-slider #numberOfCups
+            (change)="calcCoffeeSavings(numberOfCups.value, numberOfYears.value)"
+            [value]=[(cups)]
+            [max]="5"
+            [min]="1"
+            [step]="1"
+            [tick-interval]="2">
+          </md-slider> -->
+                <strong>{{ numberOfCups.value }} cups</strong>
+              </div>
+              <div>
+                <label>How many years until you retire?</label><br>
+                <!-- <md-slider #numberOfYears
+            (change)="calcCoffeeSavings(numberOfCups.value, numberOfYears.value)"
+            [value]=[(years)]
+            [max]="30"
+            [min]="10"
+            [step]="1"
+            [tick-interval]="5">
+          </md-slider> -->
+                <!-- <input type="range" max="40" min="10"   />  -->
+                <strong>{{ numberOfYears.value }} years</strong>
+              </div>
+            </div>
+            <div class="span3">
+              <img src="/assets/img/coffee-savings.png">
+            </div>
+          </div>
+          <div class="row">
+            <div class="span12">
+              <div class="totals">
+                <!--<h3>You'll have saved <strong style="font-size: 1.5em">$ {{ totalSavings }}</strong></h3>-->
+                <h3>You'll have saved <strong style="font-size: 2em">$ {{ futureValue }}</strong></h3>
+                <h4>That's some serious Joe</h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <label>How many years until you retire?</label><br>
-          <!-- <md-slider #numberOfYears
-          (change)="calcCoffeeSavings(numberOfCups.value, numberOfYears.value)"
-          [value]=[(years)]
-          [max]="30"
-          [min]="10"
-          [step]="1"
-          [tick-interval]="5">
-        </md-slider> -->
-          <!-- <input type="range" max="40" min="10"   />  -->
-          <strong>{{ numberOfYears.value }} years</strong>
-        </div>
-      </div>
-      <div class="right-col"><img src="/assets/img/coffee-savings.png"></div>
-      <div class="totals">
-        <!--<h3>You'll have saved <strong style="font-size: 1.5em">$ {{ totalSavings }}</strong></h3>-->
-        <h3>You'll have saved <strong style="font-size: 2em">$ {{ futureValue }}</strong></h3>
-        <h4>That's some serious Joe</h4>
-      </div>
+      </form>
     </div>
+    <div class="span3 right-rail">
 
-  </form>
+      <div class="contribution">
+        <h3><span>6%</span><br>This is your company match.</h3>
+        <p>Your company will match your contribution, dollar for dollar, up to six percent.</p>
+        <button class="capital-blue">LEARN MORE</button>
+      </div>
+
+    </div>
+  </div>
 </div>

@@ -7,7 +7,7 @@ import { CoffeeSavingsComponent } from './coffee-savings/coffee-savings.componen
 import { EnrollFormComponent } from './enroll-form/enroll-form.component';
 
 const appRoutes: Routes = [
-  //{ path: 'get-started', component: GetStartedComponent },
+  { path: 'getting-started', component: GetStartedComponent },
   { path: '', component: CoffeeSavingsComponent },
   { path: 'testimonials', component: TestimonialsComponent },
   { path: 'enroll-form', component: EnrollFormComponent }

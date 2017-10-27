@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./get-started.component.scss']
 })
 export class GetStartedComponent implements OnInit {
-  private pageTitle:string = "Test"
+  private pageTitle:string = "Getting started"
 
   constructor() { }
 

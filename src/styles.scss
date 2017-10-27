@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+//@import "styles/fonts";
+@import "styles/variables";
+
+.right-rail {
+  background-color: #EEE;
+  margin: .5em;
+  margin-top: -7em;
+  .contribution {
+    text-align: center;
+    background-color: #ccebf9;
+    border: 1px solid #009adf;
+    padding: 3em 1em 2em 1em;
+    h3 {
+      span {
+        font-size: 5em;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    color: white;
+    padding: .75em;
+  }
+
+}

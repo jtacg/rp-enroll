@@ -1,4 +1,6 @@
 #coffee-savings {
+  margin-bottom: 1em;
+  
   md-slider {
     width: 300px;
   }
@@ -27,21 +29,10 @@
     border-width: 1px;
   }
 
-  .left-col {
-    width: 50%;
-    float: left;
-  }
-
-  .right-col {
-    width: 50%;
-    float: right;
-  }
-
   .container {
     color: #eee;
     width: 75%;
     padding: 2em;
-    margin: 2em;
     background-color: #666460;
   }
 
